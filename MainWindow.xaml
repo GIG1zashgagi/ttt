@@ -66,11 +66,20 @@
 
                 <StackPanel Orientation="Horizontal" Grid.Row="1">
                     <Button x:Name="btnEncrypt" Content="➡ Зашифровать" Click="BtnEncrypt_Click" 
-                            Width="100" Margin="0,0,10,0" Background="#2E7D32" Foreground="White"/>
+                            Width="100" Margin="0,0,10,0" Background="Gray" Foreground="White"/>
                     <TextBox x:Name="txtOutput" Height="60" TextWrapping="Wrap" 
                              AcceptsReturn="True" Width="450" VerticalScrollBarVisibility="Auto"/>
                 </StackPanel>
             </Grid>
+        </GroupBox>
+
+        <GroupBox Grid.Row="3" Header="3. Дешифрование" Margin="0,5">
+            <StackPanel>
+                <Button x:Name="btnDecrypt" Content="⬅ Расшифровать" Click="BtnDecrypt_Click" 
+                        Width="100" Margin="0,0,0,5" Background="Gray" Foreground="White"/>
+                <TextBox x:Name="txtDecrypted" Height="80" TextWrapping="Wrap" 
+                         IsReadOnly="True" Background="#F5F5F5" VerticalScrollBarVisibility="Auto"/>
+            </StackPanel>
         </GroupBox>
     </Grid>
 </Window>
