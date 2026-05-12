@@ -5,5 +5,8 @@ using System.Collections.Generic;
 
 namespace ttt
 {
+    public class RsaAlgorithm
+    {
 
+    }
 }
